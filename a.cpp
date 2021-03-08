@@ -9,7 +9,7 @@
 #include <vector>
 
 // ユニークポインタのエイリアス
-using file_ptr_t = std::unique_ptr<FILE, decltype(&fclose)>;
+using file_ptr_t = std::unique_ptr<FILE, decltype(&_pclose)>;
 
 // Pythonにファイルを送るためのクラス
 class Pipe {
